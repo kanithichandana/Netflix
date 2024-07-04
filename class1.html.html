@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>NETFLIX</title>
+    <style>
+      .bigdiv{
+        width: 100%;
+        height: 100%;
+      background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("images/netflixbg.jpg");   
+       
+      }
+
+      .bigdiv .navbar{
+         justify-content: space-evenly;
+         display:flex;
+         align-items: center;
+         border-radius: 20px;
+
+      }
+
+      .bigdiv .navbar .logo img{
+        width: 30%
+      }
+
+      .bigdiv .navbar .auth{
+        display: flex;
+        align-items: center;
+        color: aliceblue;
+    }
+
+    .bigdiv .content{
+        align-items: center;
+        text-align: center;
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    .bigdiv .content .button{
+        background-color: red;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+
+    }
+    .button{
+        background-color: red;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+
+    }
+    .page2{
+        background-color: black;
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+    .content2{
+        padding-top: 50px;
+        padding-bottom:40px;
+
+    }
+    .space{
+        width: 100%;
+        height: 3px;
+        background-color: gray;      
+        align-items: center;
+    }
+    .page3content {
+        background-color: black;
+        align-content: center; 
+        justify-content: space-evenly;
+        color: white;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        display: flex;
+    }
+    .page4content {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: white;
+              
+    }
+    .content4{
+        padding-top: 30px;
+        padding-bottom:10px;
+    }
+    .page5content {
+        background-color: black;
+        align-content: center; 
+        justify-content: space-evenly;
+        color: white;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        display: flex;
+    }
+    .ques{
+        color: white;
+        text-align: center;
+        background-color: black;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    .ques .ques1content{
+        display: flex;
+        justify-content: space-between;
+        background-color: grey;
+        height: 40px;
+        padding-top: 30px;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        cursor: pointer;
+    } 
+    .ques .ques2content{
+        display: flex;
+        justify-content: space-between;
+        background-color: grey;
+        height: 40px;
+        padding-top: 30px;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        cursor: pointer;
+    } 
+    .ques .ques3content{
+        display: flex;
+        justify-content: space-between;
+        background-color: grey;
+        height: 40px;
+        padding-top: 30px;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        cursor: pointer;
+    }  
+    .ques .ques4content{
+        display: flex;
+        justify-content: space-between;
+        background-color: grey;
+        height: 40px;
+        padding-top: 30px;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        cursor: pointer;
+    } 
+    .ques .ques5content{
+        display: flex;
+        justify-content: space-between;
+        background-color: grey;
+        height: 40px;
+        padding-top: 30px;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        cursor: pointer;
+    }    
+    .ques .ques6content{
+        display: flex;
+        justify-content: space-between;
+        background-color: grey;
+        height: 40px;
+        padding-top: 30px;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        cursor: pointer;
+    }  
+    .ques1content:hover{
+        background-color: rgb(58, 47,47);
+    }
+    .ques2content:hover{
+        background-color: rgb(58, 47,47);
+    }
+    .ques3content:hover{
+        background-color: rgb(58, 47,47);
+    }
+    .ques4content:hover{
+        background-color: rgb(58, 47,47);
+    }
+    .ques5content:hover{
+        background-color: rgb(58, 47,47);
+    }
+    .ques6content:hover{
+        background-color: rgb(58, 47,47);
+    }
+    .authen .ready{
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 25px;
+    } 
+    .authen .det1{
+        background-color: black;
+        color: white;
+        text-align: center;
+        align-items: center;
+        font-size: 10px;
+    } 
+    .authen .det1 .input{
+        padding: 10px;
+        border-radius: 3px;
+        margin-top: 20px;
+    } 
+    .authen .det1 .button{
+        padding: 10px;
+        border-radius: 3px;
+       cursor: pointer;
+       background-color: red;
+    }
+    .final{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding-top: 30px;
+        font-size: 25px;
+    } 
+    
+    </style>
+</head>
+
+<body>
+    <div class="bigdiv">
+        <div class="navbar">
+            <div class="logo">
+                <img src="../day1/images/netflixlogo-removebg-preview.png" alt="">
+
+            </div>
+            <div class="auth">
+                <div class="auth">
+                    <p>English</p>
+
+                </div>
+                <div class="login">
+                <button class="button">SignIn</button>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <div class="content">
+            <div class="contenttext"></div>
+            <h1>Unlimited movies,TV shows and more</h1>
+            <p>Watch Anywhere,Cancel Anytime.</p>
+            <p>Ready to watch?Enter your email to create or restart your membership</p>
+        
+        <div class="card">
+            <input type="text" placeholder="chandana2004@gmail.com">
+            <button class="button">Get Started<</button>
+
+        </div>
+        </div>
+       
+    </div>
+    
+    
+    <div class="page2">
+        <div class="content2">
+        <h1 >Enjoy on your TV</h1>
+        <h4> on smart TVs, PlayStation, Xbox,Chromecast, <br>
+             Apple TV, Blu-ray players and more.</h4>
+        </div>
+            <div class="img2">
+                <img src="../day1/images/netflixtv-removebg-preview.png" alt="">
+            </div>
+    </div>
+    <div class="space"></div>
+
+    <div class="page3">
+        <div class="page3content"> 
+            <div class="img3">
+                <img src="../day1/images/netflix3.jpg" alt="">
+            </div>
+            <div class="content3">
+               <h1 >Download your <br>shows to watch <br>offline</h1><br>
+                <h4>Save your favourites easily and always have something to watch.</h4>
+           </div>
+        </div>            
+    </div>
+    <div class="space"></div>
+
+    <div class="page4">
+        <div class="page4content">           
+            <div class="content4">
+               <h1 >Watch everywhere</h1>
+                <h4>Stream unlimited movies and TV shows on your phone, tablet,<br> laptop, and TV.</h4>
+            </div>
+                <div class="img4">
+                    <img src="../day1/images/netflix4-removebg-preview.png" alt="">
+                </div>
+           
+        </div>            
+    </div>
+    <div class="space"></div>
+
+    <div class="page5">
+        <div class="page5content"> 
+            <div class="img5">
+                <img src="../day1/images/netflix5-removebg-preview.png" alt="">
+            </div>
+            <div class="content5">
+               <h1 >Create profiles for kid</h1>
+                <h4>Send children on adventures with their favourite characters in <br>a space made just for them—free with your membership.</h4>
+           </div>
+        </div>            
+    </div>
+    <div class="space"></div>
+
+    <div class="ques">
+        <h1>Frequently Asked Questions</h1>     
+        <div class="ques1content">          
+            <p>What is Netflix?</p>
+            <p>+</p>
+        </div>
+        <br>
+        <div class="ques2content">
+            <p>How much does Netflix cost?</p>
+            <p>+</p>
+        </div>
+        <br>
+        <div class="ques3content">
+            <p>Where can I watch?</p>
+            <p>+</p>
+        </div>
+        <br>
+        <div class="ques4content">
+            <p>How do I cancel?</p>
+            <p>+</p>
+        </div>
+        <br>
+        <div class="ques5content">
+            <p>What can I watch on Netflix?</p>
+            <p>+</p>            
+        </div>
+        <br>
+        <div class="ques6content">
+            <p>Netflix good for kids?</p>
+            <p>+</p>            
+        </div>
+     
+          <div class="authen">
+            <div class="ready">
+                <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                <div class="det1">
+                    <input class="input" type="text" placeholder="Email address">
+                    <button class="button">Get Started></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="space"></div> 
+    <p >@designed by kanithi chandana</p>  
+</body>
+</html>
